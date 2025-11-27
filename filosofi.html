@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filosofi Poster</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+       <section class>
+        <div class="card text-bg-dark m-3 ">
+          <div class="card-body">
+            <div class="row">
+              <div class="col d-none d-lg-block d-x1-block mt-5 mb-2 mr-2img-fluid" >
+                    <img src="HARGA MAHAL_20251116_142944_0000.png" alt="gambar1" width="500" >
+                </div>
+                <div class="col align-self-center mt-5">
+                    <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                      FILOSOFI <br>POSTER</h1>
+                   <div class="page-section active">
+    <h2>PILIHAN WARNA</h2>
+    <p>Warna merah di poster ini bisa dibaca bukan sebagai simbol bahaya, tapi sebagai penanda intensitas 
+        aktivitas digital yang terlalu cepat. Kecepatan ini membuat pengguna sering mengambil keputusan tanpa pikir panjang. 
+        Dengan perspektif ini, merah bukan lagi “warning”, tapi tanda bahwa ritme internet mendorong kita bertindak lebih cepat daripada 
+        kita memahami risikonya. Ini membuka pertanyaan: apakah masalahnya bahaya, atau kecepatan yang membuat kita kurang teliti?</p>
+    <div class="nav-buttons">
+        <button class="next">></button>
+    </div>
+</div>
+
+<div class="page-section">
+    <h2>ILLUSTRASI</h2>
+    <p>Konsep "harga mahal" menggambarkan data sebagai taruhan bernilai tinggi, tetapi penting mempertanyakan sejauh mana kita sadar ikut 
+        berjudi dalam pertukaran informasi digital. Banyak keputusan kecil seperti izin aplikasi, klik cepat, akses instan secara tidak sengaja 
+        menempatkan data kita di meja taruhan.</p>
+    <div class="nav-buttons">
+        <button class="prev"><</button>
+        <button class="next">></button>
+    </div>
+</div>
+
+<div class="page-section">
+    <h2>DOWNFALL</h2>
+    <p>Gambar kejatuhan menggambarkan dampak buruk ketika data disalahgunakan, tapi asumsi bahwa penyebabnya selalu pihak luar perlu ditantang. 
+    _Downfall_ terjadi karena kombinasi ancaman dan keputusan digital yang kurang hati-hati.</p>
+    <div class="nav-buttons">
+        <button class="prev"><</button>
+    </div>
+</div>
+                
+                </div>
+                
+            </div>
+          </div>
+        </div>
+    </section>
+    
+    <script src="js/bootstrap.bundle.js"></script>
+    <script>
+const sections = document.querySelectorAll('.page-section');
+let currentIndex = 0;
+
+function showSection(index) {
+    sections.forEach((sec, i) => {
+        sec.classList.toggle('active', i === index);
+    });
+}
+document.querySelectorAll('.next').forEach(btn => {
+    btn.addEventListener('click', () => {
+        if (currentIndex < sections.length - 1) {
+            currentIndex++;
+            showSection(currentIndex);
+        }
+    });
+});
+document.querySelectorAll('.prev').forEach(btn => {
+    btn.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            showSection(currentIndex);
+        }
+    });
+});
+</script>
+</body>
+</html>
