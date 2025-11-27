@@ -1,0 +1,279 @@
+:root {
+    font-family:'Courier New', Courier, monospace;
+}
+
+body {
+    background: linear-gradient(135deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57, #ff9ff3);
+    background-size: 400% 400%;
+    animation: gradientBG 8s ease infinite;
+}
+
+.section-card {
+      border-radius: 1rem;
+    }
+    .section-title {
+      font-weight: 600;
+      font-size: 1.25rem;
+    }
+    .list-group-item {
+      border: none;
+      padding-left: 0.2rem;
+    }
+a {
+    text-decoration: none;
+    
+}
+@keyframes gradientBG {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+/* Ganti semua card yang berwarna hitam */
+.card.text-bg-dark {
+    background: rgba(255, 251, 251, 0.9) !important;
+    color: #333 !important;
+    border: none;
+    backdrop-filter: blur(10px);
+}
+
+.list-group-item.active {
+    background: linear-gradient(135deg, #ff6b6b, #ff9ff3) !important;
+    border-color: #ff6b6b;
+}
+
+/* Untuk edukasi */
+.badge.text-bg-success {
+    background: linear-gradient(135deg, #4ecdc4, #45b7d1) !important;
+}
+
+/* Untuk button */
+.btn-primary {
+    background: linear-gradient(135deg, #45b7d1, #4ecdc4);
+    border: none;
+    outline: none ;
+}
+
+.Lembaga {
+    margin-top: 30px;
+}
+
+
+.buttons-wrapper {display: flex;gap: 15px;}
+
+button{display: block;}
+
+
+#feature2 {
+        background: linear-gradient(90deg, #005bbb, #0078d4);
+        color: #fff;
+        padding: 22px 35px;
+        border-radius: 60px;
+        max-width: 700px;
+        text-align: center;
+        margin: 18px auto;
+        font-size: 1.1rem;
+        font-weight: 500;
+        box-shadow: 0 5px 18px rgba(0, 80, 160, 0.25);
+        transition: all .3s ease-in-out;
+}
+
+.feature-box:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 22px rgba(0, 80, 160, 0.35);
+}
+
+h4 {
+        color: #003b73;
+        font-weight: 600;
+        margin-bottom: 35px;
+}
+
+.threat-card {
+        border-radius: 12px;
+        border: none;
+        padding: 20px;
+        background-color: #ffffff;
+        transition: .3s ease-in-out;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.threat-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.icon-box {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: #0077cc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 1.2rem;
+            margin-right: 12px;
+}
+
+h4 {
+            color: #003e6e;
+            font-weight: 600;
+            margin-bottom: 25px;
+}
+
+.page-section {
+    max-height: 0;
+    opacity: 0;
+    transform: translateX(-20px);
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+
+.page-section.active {
+    max-height: 600px;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+h3{
+    font-size: 16pt;
+}
+.feature-card {
+            position: relative;
+            background: #ffffff;
+            border: 1px solid #2b2b2b;
+            border-radius: 20px;
+            padding: 35px 30px;
+            box-shadow: 0 5px 18px rgba(255, 255, 255, 0.05);
+            min-height: 230px;
+            transition: .2s;
+}
+
+.feature-card:hover {
+            border-color: #0f0;
+            box-shadow: 0 0 12px rgba(0,255,0,0.4);
+            transform: translateY(-3px);
+}
+
+.feature-icon {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 14pt;
+            color: #f7c948;
+}
+
+.section-title {
+            font-size: 18pt;
+            font-weight: 500;
+            margin-bottom: 30px;
+}
+
+.section-box {
+        background: #f8fafa;
+        border-radius: 12px;
+        padding: 35px;
+        box-shadow: 0px 4px 12px rgba(0,0,0,0.05);
+}
+
+.accordion-button {
+        font-size: 1.05rem;
+        font-weight: 600;
+        padding: 16px 20px;
+}
+
+.accordion-button::after {
+        margin-left: auto;
+}
+
+.icon-circle {
+        width: 38px;
+        height: 38px;
+        background: #e9f4ff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 12px;
+        color: #0d6efd;
+        font-size: 1.2rem;
+}
+
+.accordion-item {
+        border: none;
+        border-bottom: 1px solid #eee;
+}
+
+.feature-img {
+        border-radius: 12px;
+        width: 100%;
+        object-fit: cover;
+        box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+.feature-box {
+        padding: 40px 0;
+}
+
+.feature-title {
+        font-size: 1.6rem;
+        font-weight: 700;
+}
+
+.section-bg {
+        background: #f8fafc;
+        border-radius: 12px;
+        padding: 40px;
+        margin-bottom: 40px;
+}
+
+.timeline {
+      position: relative;
+      margin: 40px auto;
+      padding-left: 40px;
+      border-left: 3px solid rgb(12, 12, 12);
+}
+
+.timeline-item {
+      margin-bottom: 40px;
+      position: relative;
+}
+
+.timeline-item::before {
+      content: "";
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: rgb(12, 243, 12);
+      border: 2px solid #000;
+      position: absolute;
+      left: -51px;
+      top: 5px;
+      box-shadow: 0 0 10px #0f0;
+}
+
+.cyber-card {
+      background: #f2f2f3;
+      border: 1px solid #2b2b2b;
+      padding: 20px;
+      border-radius: 12px;
+      transition: 0.3s;
+}
+
+.cyber-card:hover {
+      border-color: #0f0;
+      box-shadow: 0 0 12px rgba(0,255,0,0.4);
+      transform: translateY(-3px);
+}
+
+.cyber-title {
+      color: rgb(1, 2, 1);
+      font-size: 1.3rem;
+}
